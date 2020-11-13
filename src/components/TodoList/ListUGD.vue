@@ -20,10 +20,10 @@
             </v-card-title>
             <v-data-table :headers="headers" :items="todos" :search="search">
                 <template v-slot:[`item.actions`]="{ item }">
-                    <v-icon small class="mr-2" @click="dialog=true, editItem(item)" color="blue">
+                    <v-icon class="mr-2" @click="dialog=true, editItem(item)" color="blue">
                         mdi-pencil
                     </v-icon>
-                    <v-icon small @click="dialogDelete=true, deleteItem(item)" color="red">
+                    <v-icon @click="dialogDelete=true, deleteItem(item)" color="red">
                         mdi-delete
                     </v-icon>
                 </template>
@@ -32,8 +32,7 @@
                         <v-chip
                         class="ma-2"
                         color="red"
-                        label
-                        outlined>
+                        label outlined>
                             {{item.priority}}
                         </v-chip>
                     </span>
@@ -41,8 +40,7 @@
                         <v-chip
                         class="ma-2"
                         color="green"
-                        label
-                        outlined>
+                        label outlined>
                             {{item.priority}}
                         </v-chip>
                     </span>
@@ -50,8 +48,7 @@
                         <v-chip
                         class="ma-2"
                         color="blue"
-                        label
-                        outlined>
+                        label outlined>
                             {{item.priority}}
                         </v-chip>
                     </span>
