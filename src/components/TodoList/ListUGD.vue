@@ -29,26 +29,17 @@
                 </template>
                 <template v-slot:[`item.priority`]="{ item }">
                     <span v-if="item.priority == 'Penting'">
-                        <v-chip
-                        class="ma-2"
-                        color="red"
-                        label outlined>
+                        <v-chip class="ma-2" color="red" label outlined>
                             {{item.priority}}
                         </v-chip>
                     </span>
                     <span v-else-if="item.priority == 'Tidak penting'">
-                        <v-chip
-                        class="ma-2"
-                        color="green"
-                        label outlined>
+                        <v-chip class="ma-2" color="green" label outlined>
                             {{item.priority}}
                         </v-chip>
                     </span>
                     <span v-else-if="item.priority == 'Biasa'">
-                        <v-chip
-                        class="ma-2"
-                        color="blue"
-                        label outlined>
+                        <v-chip class="ma-2" color="blue" label outlined>
                             {{item.priority}}
                         </v-chip>
                     </span>
